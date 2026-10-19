@@ -1,5 +1,3 @@
-# Kaguya — btop theme
-# Install to ~/.config/btop/themes/kaguya.theme, select in btop ESC menu
 theme[main_bg]="#14111c"
 theme[main_fg]="#dcd2ea"
 theme[title]="#dcd2ea"

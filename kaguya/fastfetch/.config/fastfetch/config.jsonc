@@ -1,6 +1,3 @@
-// Kaguya — fastfetch config
-// Back up first:  cp ~/.config/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc.bak
-// then drop this in as ~/.config/fastfetch/config.jsonc
 // Colours are truecolor SGR strings: "38;2;R;G;B"
 //   red    #db3251 -> 38;2;219;50;81
 //   lav    #8a7daa -> 38;2;138;125;170
