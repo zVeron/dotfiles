@@ -1,0 +1,58 @@
+// Kaguya — fastfetch config
+// Back up first:  cp ~/.config/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc.bak
+// then drop this in as ~/.config/fastfetch/config.jsonc
+// Colours are truecolor SGR strings: "38;2;R;G;B"
+//   red    #db3251 -> 38;2;219;50;81
+//   lav    #8a7daa -> 38;2;138;125;170
+//   l.lav  #bba3d5 -> 38;2;187;163;213
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "cachyos",
+        "padding": { "top": 1, "right": 4 },
+        "color": {
+            "1": "38;2;219;50;81",
+            "2": "38;2;138;125;170",
+            "3": "38;2;187;163;213"
+        }
+    },
+    "display": {
+        "separator": " → ",
+        "color": {
+            "keys": "38;2;138;125;170",
+            "title": "38;2;219;50;81",
+            "separator": "38;2;75;63;101"
+        }
+    },
+    "modules": [
+        "title",
+        "separator",
+        "os",
+        "kernel",
+        "uptime",
+        "packages",
+        "shell",
+        "separator",
+        "display",
+        "de",
+        "wm",
+        "theme",
+        "icons",
+        "font",
+        "cursor",
+        "terminal",
+        "separator",
+        "cpu",
+        "gpu",
+        { "type": "opengl", "key": "Driver" },
+        "separator",
+        "memory",
+        "swap",
+        { "type": "disk", "key": "OS Drive",    "folders": "/" },
+        { "type": "disk", "key": "Games Drive", "folders": "/run/media/veron/617fe540-0c59-42ea-aefd-b3785f83787c" },
+        "separator",
+        { "type": "sound", "key": "Audio" },
+        "separator",
+        { "type": "colors", "symbol": "block" }
+    ]
+}
