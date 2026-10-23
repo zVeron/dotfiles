@@ -1,0 +1,72 @@
+# mono.theme — monochrome btop theme
+# Place in ~/.config/btop/themes/
+# Transparency comes from kitty: turn OFF "Theme background" in btop's
+# options so btop draws on the terminal's (transparent) background.
+
+# Main background — ignored when theme_background is off
+theme[main_bg]="#0e0e0e"
+
+# Main text, box titles, highlighted keys
+theme[main_fg]="#d4d4d4"
+theme[title]="#f0f0f0"
+theme[hi_fg]="#ffffff"
+
+# Selected process line
+theme[selected_bg]="#3a3a3a"
+theme[selected_fg]="#ffffff"
+
+# Inactive/disabled text
+theme[inactive_fg]="#5a5a5a"
+
+# Text drawn over graphs, e.g. "up" / "down" labels
+theme[graph_text]="#a8a8a8"
+
+# Background of empty meter bars
+theme[meter_bg]="#2a2a2a"
+
+# Misc process details (e.g. tree lines)
+theme[proc_misc]="#8a8a8a"
+
+# Box outlines and divider lines
+theme[cpu_box]="#5a5a5a"
+theme[mem_box]="#5a5a5a"
+theme[net_box]="#5a5a5a"
+theme[proc_box]="#5a5a5a"
+theme[div_line]="#3a3a3a"
+
+# Gradients: dark grey (low) -> white (high)
+theme[temp_start]="#6a6a6a"
+theme[temp_mid]="#a8a8a8"
+theme[temp_end]="#ffffff"
+
+theme[cpu_start]="#6a6a6a"
+theme[cpu_mid]="#a8a8a8"
+theme[cpu_end]="#ffffff"
+
+theme[free_start]="#4a4a4a"
+theme[free_mid]="#7a7a7a"
+theme[free_end]="#a8a8a8"
+
+theme[cached_start]="#5a5a5a"
+theme[cached_mid]="#8a8a8a"
+theme[cached_end]="#b4b4b4"
+
+theme[available_start]="#6a6a6a"
+theme[available_mid]="#9a9a9a"
+theme[available_end]="#c8c8c8"
+
+theme[used_start]="#7a7a7a"
+theme[used_mid]="#b4b4b4"
+theme[used_end]="#ffffff"
+
+theme[download_start]="#5a5a5a"
+theme[download_mid]="#9a9a9a"
+theme[download_end]="#e6e6e6"
+
+theme[upload_start]="#5a5a5a"
+theme[upload_mid]="#9a9a9a"
+theme[upload_end]="#e6e6e6"
+
+theme[process_start]="#7a7a7a"
+theme[process_mid]="#b4b4b4"
+theme[process_end]="#ffffff"

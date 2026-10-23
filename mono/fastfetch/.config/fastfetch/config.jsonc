@@ -1,0 +1,60 @@
+// Mono — fastfetch config (converted from Kaguya)
+// Keep the Kaguya version as config.jsonc.kaguya before replacing.
+// Colours are truecolor SGR strings: "38;2;R;G;B"
+//   white   #ffffff -> 38;2;255;255;255   (title)
+//   light   #d4d4d4 -> 38;2;212;212;212   (logo main)
+//   pale    #b4b4b4 -> 38;2;180;180;180   (logo accent)
+//   mid     #a8a8a8 -> 38;2;168;168;168   (keys)
+//   grey    #8a8a8a -> 38;2;138;138;138   (logo secondary)
+//   dim     #4a4a4a -> 38;2;74;74;74      (separators)
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "cachyos",
+        "padding": { "top": 1, "right": 4 },
+        "color": {
+            "1": "38;2;212;212;212",
+            "2": "38;2;138;138;138",
+            "3": "38;2;180;180;180"
+        }
+    },
+    "display": {
+        "separator": " → ",
+        "color": {
+            "keys": "38;2;168;168;168",
+            "title": "38;2;255;255;255",
+            "separator": "38;2;74;74;74"
+        }
+    },
+    "modules": [
+        "title",
+        "separator",
+        "os",
+        "kernel",
+        "uptime",
+        "packages",
+        "shell",
+        "separator",
+        "display",
+        "de",
+        "wm",
+        "theme",
+        "icons",
+        "font",
+        "cursor",
+        "terminal",
+        "separator",
+        "cpu",
+        "gpu",
+        { "type": "opengl", "key": "Driver" },
+        "separator",
+        "memory",
+        "swap",
+        { "type": "disk", "key": "OS Drive",    "folders": "/" },
+        { "type": "disk", "key": "Games Drive", "folders": "/run/media/veron/617fe540-0c59-42ea-aefd-b3785f83787c" },
+        "separator",
+        { "type": "sound", "key": "Audio" },
+        "separator",
+        { "type": "colors", "symbol": "block" }
+    ]
+}
