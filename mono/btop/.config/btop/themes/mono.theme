@@ -1,7 +1,3 @@
-# mono.theme — monochrome btop theme
-# Place in ~/.config/btop/themes/
-# Transparency comes from kitty: turn OFF "Theme background" in btop's
-# options so btop draws on the terminal's (transparent) background.
 
 # Main background — ignored when theme_background is off
 theme[main_bg]="#0e0e0e"
