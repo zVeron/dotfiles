@@ -1,0 +1,62 @@
+// Noctalia — fastfetch config
+// Same modules as the Kaguya/Mono versions, but every colour is an ANSI
+// palette slot instead of a fixed hex/truecolor value. Kitty's 16 palette
+// colours come from Noctalia's Kitty template, so this follows whatever
+// palette Noctalia is using — no edits needed when you re-theme.
+//
+// Colour codes (SGR):
+//   30-37 = normal  black/red/green/yellow/blue/magenta/cyan/white
+//   90-97 = bright  black/red/green/yellow/blue/magenta/cyan/white
+// The "colors" row at the bottom of the output shows the current palette,
+// so you can see which slot looks best and swap numbers below.
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "cachyos",
+        "padding": { "top": 1, "right": 4 },
+        "color": {
+            "1": "35",
+            "2": "34",
+            "3": "95"
+        }
+    },
+    "display": {
+        "separator": " → ",
+        "color": {
+            "keys": "34",
+            "title": "35",
+            "separator": "90"
+        }
+    },
+    "modules": [
+        "title",
+        "separator",
+        "os",
+        "kernel",
+        "uptime",
+        "packages",
+        "shell",
+        "separator",
+        "display",
+        "de",
+        "wm",
+        "theme",
+        "icons",
+        "font",
+        "cursor",
+        "terminal",
+        "separator",
+        "cpu",
+        "gpu",
+        { "type": "opengl", "key": "Driver" },
+        "separator",
+        "memory",
+        "swap",
+        { "type": "disk", "key": "OS Drive",    "folders": "/" },
+        { "type": "disk", "key": "Games Drive", "folders": "/run/media/veron/617fe540-0c59-42ea-aefd-b3785f83787c" },
+        "separator",
+        { "type": "sound", "key": "Audio" },
+        "separator",
+        { "type": "colors", "symbol": "block" }
+    ]
+}
